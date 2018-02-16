@@ -1,3 +1,5 @@
+This is the submission I made for my homework 2 assignment. The assignment was essentially that we were given just a username, and we had to reserach as much as we could about that person, and eventually that led us to a server which we then were able to hack into.
+
 Homework 2 – Briong70
 I pledge on my honor that I have not given or received any unauthorized assistance on this assignment. -Jacob Elspas
 
