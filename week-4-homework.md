@@ -2,7 +2,7 @@
 
 Homework #2
 
-[1] Hi Mark! Thanks for reaching out to me. I’d be happy to help you fix up some of the vulnerabilities of your site. There are three main things that I think would be the most beneficial in fixing, your passwords, putting data on the internet (IP addresses and usernames), and closing your ports.
+[Question 1] Hi Mark! Thanks for reaching out to me. I’d be happy to help you fix up some of the vulnerabilities of your site. There are three main things that I think would be the most beneficial in fixing, your passwords, putting data on the internet (IP addresses and usernames), and closing your ports.
 
 The main issue was that your password was not very secure. I used a brute-force algorithm to crack it, but it was a) in a database of words which is already a bad sign and b) blink182 is a short and not very secure password, with only 5 letters and three numbers following it. In fact, the online password checker https://howsecureismypassword.net/ shows that it would be cracked instantaneously, that’s how insecure it is. Instead, I would recommend generating a secure password from any site online (for example https://passwordsgenerator.net/) and then committing it to memory or using a secure online password manager like google smart lock or any other service.
 
@@ -13,3 +13,6 @@ Lastly, you left port 1337 open, which enabled me to connect to and then break i
 If you have any other question, let me know. Hope this helps!
 
 -- Your friendly neighborhood white hat hacker
+
+[Question 2] My understanding is that there is not a very large ethical distinction between HIBP and Shodan/Cersys, however some still does exist. They both use different methods to provide some information about those whose security has bene breached, but not enough to compromise that individual or group. However, Shodan and Cersys seem to be a bit less secure and also a bit less ethical because they tell you what exploits are possible even if they don’t tell you how to do them. As such, this seems to be a bit unsecure, because if you know what vulnerabilities exist in a system it is easier to try and perform those exploits on a system. In contrast, HIBP is able to let people know if they have been the subject of an attack, which from an ethical perspective is great because they are providing a service to notify people of something that they might be unaware about.
+
