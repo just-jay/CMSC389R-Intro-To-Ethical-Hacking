@@ -14,3 +14,12 @@ exploit
 This ran the exploit on the IP address 165.227.204.80, which is the IP address of the website www.briong.com. I found this by using a website where you give it a domain name and it returns it’s IP address: 
 
 ![](/img/briong-IP.PNG)
+
+After the execution of heartbleed, I looked through the output that was returned and I found the flag, as well as a username and a password:
+
+* username=mnthomp22
+* password=pass1234
+* flag=CMSC389R-{h3art_bl33d}
+
+Lastly, I also found an easter egg in the same line : easteregg=V0FJVCBUSElTIElTTidUIEVOQ1JZUFRJT04/Pw0KQ01TQzM4OVIte2Jhc2U2NF9pc19zdGlsbF91c2VkX2Zvcl9jcnlwdDB9!
+
