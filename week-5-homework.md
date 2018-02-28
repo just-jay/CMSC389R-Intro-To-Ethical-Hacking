@@ -13,4 +13,4 @@ exploit
 ```
 This ran the exploit on the IP address 165.227.204.80, which is the IP address of the website www.briong.com. I found this by using a website where you give it a domain name and it returns it’s IP address: 
 
-![Alt text](images/briong ip address)
+![Alt text](img/briong-IP.png?raw=true "Title")
