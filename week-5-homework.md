@@ -37,3 +37,6 @@ The second part of this project involved running command injection on the Briong
 
 So, I tried this. I ran `nc briong.com 45` to get into the server, and was greeted with this login screen: 
 ![](/img/homework4-ping.PNG)
+
+I then tried a semicolon with an `ls` command to see what was in the current directory, which resulted in this output: 
+![](/img/homework4-ls.PNG)
