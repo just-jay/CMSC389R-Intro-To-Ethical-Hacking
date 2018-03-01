@@ -28,6 +28,7 @@ After receiving a hint from my instructor, I learned that it was encoded in Base
 WAIT THIS ISN'T ENCRYPTION??
 CMSC389R-{base64_is_still_used_for_crypt0}
 
+I've included a screenshot of a subsegment the output that I received after doing the attack:
 ![](/img/bash-flag.PNG)
  - - -
 Part 2: 
