@@ -36,3 +36,4 @@ Part 2:
 The second part of this project involved running command injection on the Briong server. This took a long time, because I thought that you had to use metasploit and was having lots of trouble finding a command injection exploit and then running it. However, after too much time spent on that fruitless endeavor, eventually I went to the Wikipedia page that was linked about command injection and found that you can add a semicolon and another command to an input, and the second command will run. 
 
 So, I tried this. I ran `nc briong.com 45` to get into the server, and was greeted with this login screen: 
+![](/img/homework4-ping.PNG)
