@@ -33,10 +33,26 @@ I've included a screenshot of a subsegment the output that I received after doin
  - - -
 Part 2: 
 
-The second part of this project involved running command injection on the Briong server. This took a long time, because I thought that you had to use metasploit and was having lots of trouble finding a command injection exploit and then running it. However, after too much time spent on that fruitless endeavor, eventually I went to the Wikipedia page that was linked about command injection and found that you can add a semicolon and another command to an input, and the second command will run. 
+The second part of this project involved running command injection on the Briong server. This took a long time, because I thought that you had to use metasploit and was having lots of trouble finding a command injection exploit and then running it. However, after too much time spent on that fruitless endeavor, eventually I went to the Wikipedia page that was linked about command injection and realized that I was going about this all wrong. I found that you can add a semicolon and another command to an input, and the second command will run. This got me thinking that I could try to pass a command as my login info to try and see what was on the server.
 
 So, I tried this. I ran `nc briong.com 45` to get into the server, and was greeted with this login screen: 
 ![](/img/homework4-ping.PNG)
 
 I then tried a semicolon with an `ls` command to see what was in the current directory, which resulted in this output: 
 ![](/img/homework4-ls.PNG)
+
+I decided to check the desktop to see if anything was there. I logged in again, this time putting `; ls home/` in the login to see what was located in the home directory
+
+![](/img/homework4-home.PNG)
+
+There's the flag! I made one more command injection call with `cat home/flag.txt` to print out the flag and retrieved this flag -> Good! Here's your flag: CMSC389R-{p1ng_c0mmand_inj3ction}
+
+![](/img/homework4-flag.PNG)
+
+This is a pretty big flaw! Anybody could write any kind of code on this server, deleting files or running their own scripts. One common way to fix this is to use a method called 'sanitizing', where inputted strings with questionable characters (like ;, /, etc.) are either rejected or remove those characters before running them. A second common thing to do is use prepared statements, which cleverly runs input in such a way that it keeps the input from directly affecting the data, keeping it secure. 
+
+I went through alot of the folders in the server and eventualy found the code that Mark uses to tell if a server is up and found that it does indeed run the command that is inputted (specified by $domain) without preparing it or checking if it could contain anything malicious.
+
+![](/img/homework4-startup.PNG)
+
+Let's hope Briong starts stepping up their security!
