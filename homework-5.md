@@ -2,11 +2,10 @@
 
 <h2>Homework #4</h2>
 
-Setup
+<b>Setup</b>:
 The first thing I did was run 
 ` $ sudo apt install exiftool steghide ` 
 in bash in order to get the required packages for this assignment. I also downloaded the three files provided to us that we would be analyzing: `imagefun.jpg`, `fubar.core`, and ```traffic.pcap```. 
 
- Part 1
+<b>Part 1</b>:
 The first part of this assignment was to investigate the meatdata of a file called `imagefun.jpg`. The first thing I tried was to run `exiftool imagefun.jpg` to see what I could find in the metadata.
-
