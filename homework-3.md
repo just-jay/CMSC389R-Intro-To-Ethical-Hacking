@@ -2,7 +2,7 @@
 
 Homework #2
 
-[Question 1] Hi Mark! Thanks for reaching out to me. I’d be happy to help you fix up some of the vulnerabilities of your site. There are three main things that I think would be the most beneficial in fixing, your passwords, putting data on the internet (IP addresses and usernames), and closing your ports.
+[Question 1] Hi Mark! Thanks m   for reaching out to me. I’d be happy to help you fix up some of the vulnerabilities of your site. There are three main things that I think would be the most beneficial in fixing, your passwords, putting data on the internet (IP addresses and usernames), and closing your ports.
 
 The main issue was that your password was not very secure. I used a brute-force algorithm to crack it, but it was a) in a database of words which is already a bad sign and b) blink182 is a short and not very secure password, with only 5 letters and three numbers following it. In fact, the online password checker https://howsecureismypassword.net/ shows that it would be cracked instantaneously, that’s how insecure it is. Instead, I would recommend generating a secure password from any site online (for example https://passwordsgenerator.net/) and then committing it to memory or using a secure online password manager like google smart lock or any other service.
 
