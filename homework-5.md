@@ -49,6 +49,8 @@ Next I tried running `strings fubar.core`, which outputted a bunch of the data I
 1) The OS is (Ubuntu 5.4.0-6ubuntu1~16.04.9) 5.4.0 20160609. The libc is /lib/x86_64-linux-gnu/libc-2.23.so (64 bit linux). 
 2) by running `strings fubar.core | grep -P "fubar"`, I found `./fubar`, which implies that the program wasn’t run with any commands, and just executed by itself
 3) By running `strings fubar.core | grep -P "\S+=\S+"` I found that MNTHOMP_PASSWORD=ilovenickelback, PGP_HIDDEN=true, EN=true, and PGP_HIDDEN=true
-4)
+4) I used binwalk again to look through all of the files of fubar.core, and inside I found an image file. So I extracted the files again using the method I described part 1 section 3, and was given this image:
+
+ ![](/img/dudeguy.png)
 
 I also found dMark Thompson (You're on the right track if you find this - keep digging class!) <mnthomp22@tuta.io>
