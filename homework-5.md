@@ -66,5 +66,5 @@ I followed along with the recorded lecture for this part of the assignment. The 
 
  ![](/img/beedogs.PNG)
 
-4) While in the html and changing the img tags, i also found the flag as a comment: <!--CMSC389R-{pc4p-4n4lys1s}--> 
+4) While in the html and changing the img tags, i also found the flag as a comment: CMSC389R-{pc4p-4n4lys1s}
 5) There is a TCP protocol that got highlighted in crimson red by wireshark. I'm not sure what this means but that sounds liek it's important. I assume wireshark knew what it was doing. Also, since it's TCP that means it must have been involved in some type of packet transfer, which means data was getting sent and its logged via this pcap. Perhaps with some hacking one could trace what was being sent? The file doesn't say but it might be possible.
