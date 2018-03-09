@@ -19,3 +19,25 @@ This is quite odd, because the first iPhone was released on June 29th, 2007, so 
 ![](/img/coordmap.PNG)
  --
 Part 2
+1) By running `exiftool fubar.core`, I found that the CPU architecture for this is a 64 bit machine that has a CPU type of AMD x86-64. 
+
+
+I also opened the core file in notepad just cause and found a bunch of stuff:
+-	CORE
+-	MNTHOMP_PASSWORD true
+-	LINUX
+-	IGISCORE
+-	/tmp/fubar
+-	/lib/x86_64-linux-gnu/libc-2.23.so
+-	/lib64/ld-linux-x86-64.so.2
+-	libc.so.6 getpid printf chdir sleep
+-	__libc_start_main setenv
+-	__gmon_start__ GLIBC_2.2.5
+-	Ilovenickelback
+-	PGP_HIDDEN
+-	/usr/local/sbin
+-	you should run: sudo gcore -o fubar %d (students ignore this)
+-	
+2) 
+3)
+4)
