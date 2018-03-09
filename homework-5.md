@@ -53,4 +53,16 @@ Next I tried running `strings fubar.core`, which outputted a bunch of the data I
 
  ![](/img/dudeguy.png)
 
-I also found dMark Thompson (You're on the right track if you find this - keep digging class!) <mnthomp22@tuta.io>
+I also found this: dMark Thompson (You're on the right track if you find this - keep digging class!) <mnthomp22@tuta.io>
+
+--
+Part 3
+
+I followed along with the recorded lecture for this part of the assignment. The first thing that I did was open wireshark with the pcap file (`wireshark traffic.pcap`). I filtered the requests with HTTP and from there was able to conclude the following
+
+1) We can see that the ip address of the GET requests came from http://129.2.94.135/, which as we have found in other classes is irc.csec.umiacs.umd.edu.
+2) Under the info column of wireshark we see /mnthomp_beedogs.html, so we can assume that the relative url of the page is http://irc.csec.umiacs.umd.edu/mnthomp_beedogs.html
+3)
+4)
+5)
+
