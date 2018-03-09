@@ -16,6 +16,7 @@ This is quite odd, because the first iPhone was released on June 29th, 2007, so 
 3) I was going through the commands in the slides and trying different ones when I came upon binwalk. I noticed the description mentioned images, so I thought I’d try it out. So I tried `binwalk -a imagefun.jpg`. The output of this showed that there was a second jpg hidden inside the first!  I spent a while reading about binwalk online and through the `man binwalk` command. Eventaully, I found a command on stack overflow to extract all files, ran it `binwalk –dd=’.*’ imagefun.jpg`, and that extracted the below file to my desktop. First flag found!
 
 Based on the info of the first flag, I assumed that the password was mnthomp22 from previous projects. So I ran `steghide extract -sf imagefun.jpg -xf out.txt` which prompted me for a login. I had run this command previously, but now that I had a password I was set. I typed in mnthomp22, and it wrote the extracted data to out.txt.  I ran `cat out.txt` and was greeted with congrats, you made it here! your flag: CMSC389R-{m4rk's b4d s3cur1ty}. Two flags down! Guess Mark really hasn’t learnt his lesson!
+
 ![](/img/exiftool.PNG)
 ![](/img/coordmap.PNG)
  --
