@@ -14,6 +14,6 @@ Furthermore, it is running a version of iCamera 1.2.3 which was last updated in 
 2) This photo was taken in 1984 on January 1st, at exactly 12:12 and 12 seconds. 
 This is quite odd, because the first iPhone was released on June 29th, 2007, so someone must have edited the time on the picture. The picture was also taken at these coordinates: 38 deg 55' 1.41" N, 77 deg 1' 42.81" W. This brought me to  street in DC, but I couldn’t find anything of interest at the location. However, since the time the picture was taken had been changed, it is possible that the location had been changed as well.
 
-![](/img/exiftool data.PNG)
-![](/img/map image.PNG)
+![](/img/exiftool.PNG)
+![](/img/coordmap.PNG)
 ![](/img/bash-flag.PNG)
