@@ -62,7 +62,10 @@ I followed along with the recorded lecture for this part of the assignment. The 
 
 1) We can see that the ip address of the GET requests came from http://129.2.94.135/, which as we have found in other classes is irc.csec.umiacs.umd.edu.
 2) Under the info column of wireshark we see /mnthomp_beedogs.html, so we can assume that the relative url of the page is http://irc.csec.umiacs.umd.edu/mnthomp_beedogs.html
-3)
+3) I followed the directions and exported all the files. Then I opened the html, and in the browser (using inspect element) I changed the image tags so that the linked to the correct file names:
+
+ ![](/img/beedogs.PNG)
+
 4)
 5)
 
