@@ -16,3 +16,4 @@ This is quite odd, because the first iPhone was released on June 29th, 2007, so 
 
 ![](/img/exiftool data.PNG)
 ![](/img/map image.PNG)
+![](/img/bash-flag.PNG)
