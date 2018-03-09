@@ -45,8 +45,10 @@ First I opened the core file in notepad just cause and found a bunch of stuff:
 -	you should run: sudo gcore -o fubar %d (students ignore this)
 
 It all looked useful, but I knew I needed to do more to figure out what meant what
-
-1)
-2) 
-3)
+Next I tried running `strings fubar.core`, which outputted a bunch of the data I had seen in the raw text file. However, a few things stood out that helped me see what was actually happening. Combining that data with what I had found previously, I concluded the following:
+1) The OS is (Ubuntu 5.4.0-6ubuntu1~16.04.9) 5.4.0 20160609. The libc is /lib/x86_64-linux-gnu/libc-2.23.so (64 bit linux). 
+2) by running `strings fubar.core | grep -P "fubar"`, I found `./fubar`, which implies that the program wasn’t run with any commands, and just executed by itself
+3) By running `strings fubar.core | grep -P "\S+=\S+"` I found that MNTHOMP_PASSWORD=ilovenickelback, PGP_HIDDEN=true, EN=true, and PGP_HIDDEN=true
 4)
+
+I also found dMark Thompson (You're on the right track if you find this - keep digging class!) <mnthomp22@tuta.io>
