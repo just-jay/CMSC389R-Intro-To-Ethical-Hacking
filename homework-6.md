@@ -14,8 +14,9 @@ Via the code I wrote and used I found the follwoing:
 1) foo.fpff has a unix timestamp of 1056472735, which when converted becomes Tuesday, June 24, 2003 12:38:55 PM (according to my current time zone)
 2) The author of the the file is mnthomp
 3) The file says it has 9 sections.
-4) My code returned teh output below
-``` -------  BODY  -------
+4) My code returned the output below
+```
+-------  BODY  -------
 1 [SECTION_ASCII (0x1)]
 ('i love leaving restaurant reviews!',)
 2 [SECTION_WORDS (0x3) -- Array of words]
@@ -33,10 +34,8 @@ section ref: 1
 8 [SECTION_PNG (0x8) -- Embedded PNG image.]
 File Created: resultsfile.png
 9 [SECTION_ASCII (0x1)]
-('NF2CO4ZANRUWWZJAMEQGMYLDORXXE6JMEBRHK5BAMZXXEIDGN5XWIIIK',)```
-
-
-
+('NF2CO4ZANRUWWZJAMEQGMYLDORXXE6JMEBRHK5BAMZXXEIDGN5XWIIIK',)
+```
 5) nest 
 
 Part 2: 
