@@ -13,33 +13,22 @@ Via the code I wrote and used I found the follwoing:
 
 1) foo.fpff has a unix timestamp of 1056472735, which when converted becomes Tuesday, June 24, 2003 12:38:55 PM (according to my current time zone)
 2) The author of the the file is mnthomp
-3) The file says it has 9 sections.
+3) The file says it has 9 sections. However, after a hint from an instructor, I realized there were actually two more, for a total of 11 sections
 4) My code returned the output below
-```
--------  BODY  -------
-1 [SECTION_ASCII (0x1)]
-('i love leaving restaurant reviews!',)
-2 [SECTION_WORDS (0x3) -- Array of words]
-(3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9)
-3 [SECTION_COORD (0x6) -- (Latitude, longitude) tuple of doubles.]
-(25.291332, -80.3809373)
-4 [SECTION_REFERENCE (0x7) -- The index of another section.]
-section ref: 1
-5 [SECTION_ASCII (0x1)]
-("i wonder when they'll fix their sign?",)
-6 [SECTION_ASCII (0x1)]
-('i heard their naan is always fresh',)
-7 [SECTION_COORD (0x6) -- (Latitude, longitude) tuple of doubles.]
-(38.9910941, -76.9328019)
-8 [SECTION_PNG (0x8) -- Embedded PNG image.]
-File Created: resultsfile.png
-9 [SECTION_ASCII (0x1)]
-('NF2CO4ZANRUWWZJAMEQGMYLDORXXE6JMEBRHK5BAMZXXEIDGN5XWIIIK',)
-```
-5) nest 
+![](/img/Header_And_Sections.PNG)
 
-Part 2: 
+5) There are 3 hidden flags in this file.
+The first flag was in the PNG that I got from section 8. After spending waay to long trying to get it into a png format using Image, Pip and PIL, I took a different route and got it into a file titles resultsfile.png. Opening it up revealed the flag!
 
+![](/img/resultfile.png)
 
+The flag in section 10 looked a lot like the one in a past project, which was encoded in base64. I decided to try and decode it, and I got the follwoing: CMSC389R-{h1dd3n-s3ct10n-1n-f1l3}. Boo Yah!
 
-ao;k
+The second flag was the hardest for me. I tried base64 again but it didn't work. I eventuallt made my way to [this](https://en.wikipedia.org/wiki/Binary-to-text_encoding) wiki page and went through every method of encoding trying to decipher tehr string, until finally base32 worked, giving me the follwoing decryption: "not a UTF-8 string"
+
+I found the online flag by googling the 2 pairs of coordinates found in sections 3 and 7. They brought me to the Florida Keys, and I spent quite a while looking through the online nearby thing, the Alabama Jacks Seafood Restaraunt. Eventually I gave up and moved to the other coordinate, which brought me right off UMD campus. BY this point I realized that there was a restaraunt theme going on. I looked at the output of the fpff file and noticed it related to restaraunt reviews. I looked back at Alabama Jacks and Pupuseria La Familiar (a restaraunt in the area), before eventually (after too much time trying lol) finding a review on Yelp about Food Factory by Mark T. It read: "I go here every Friday. Awesome Tandoori chicken, plus their mango lassi is great. Would highly recommend. CMSC389r-{t4nd00r1-ch1ck3n}"
+
+---
+
+An Extra Flag I Found By Accident  
+I realized that all the flags had cmsc389 in them in plaintext, so I decided to google that to see what would coem up. I ended up finding a flag that was never used for the project, but was just my instructor playing around with some ideas he had. It was a review of Rose Hill Cemetary on TripHobo and it read: "Saw some mountain bikers having fun here. RIP Duane Allman CMSC389R-{wh1pp1ng-p0st}"
