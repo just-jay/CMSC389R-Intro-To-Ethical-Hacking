@@ -7,7 +7,7 @@ Setup: I started by downloading the requisite fpff file and the python stub to d
 ---
 
 Part 1: I read through the stub, as well as the provided resources on fpff. 
-I used the provided stub to write a parser for the fpff file format. It is included in this repository and can be found here: //ADD A LINK TO THE CODE
+I used the provided stub to write a parser for the fpff file format. It is included in this repository and can be found [here](https://github.com/just-jay/CMSC389R-Intro-To-Ethical-Hacking/blob/master/Homework-6-Parser.py)
 
 Via the code I wrote and used I found the following:
 
