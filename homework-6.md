@@ -7,9 +7,11 @@ Setup: I started by downloading the requisite fpff file and the python stub to d
 ---
 
 Part 1: I read through the stub, as well as the provided resources on fpff. 
-I used the provided stub to write a parser for the fpff file format. It is included in this repository and can be found here: //ADD A LINK TO THE CODE
+I used the provided stub to write a parser for the fpff file format. It is included in this repository, and can be viewed [here](https://github.com/just-jay/CMSC389R-Intro-To-Ethical-Hacking/blob/master/Homework-6-Parser.py)
 
-Via the code I wrote and used I found the follwoing:
+---
+
+Part 2: Via the code I wrote and used I found the follwoing:
 
 1) foo.fpff has a unix timestamp of 1056472735, which when converted becomes Tuesday, June 24, 2003 12:38:55 PM (according to my current time zone)
 2) The author of the the file is mnthomp
