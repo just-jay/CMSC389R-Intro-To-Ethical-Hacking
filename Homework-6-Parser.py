@@ -1,10 +1,5 @@
 #!/usr/bin/env python2
 
-
-#######################################################################################
-This is a parser written in Python to parse the fictional fpff file format for CMSC389R
-#######################################################################################
-
 import sys
 import struct
 
@@ -44,12 +39,13 @@ magic, version, timestamp = struct.unpack("<LLL", data[start:end])
 start = end
 end += dword #author is 8 bytes long
 
-author, = struct.unpack("%ds" % dword, data[start:end]) 
+author, = struct.unpack("%ds" % dword, data[start:end]) #parse the author
 
+#move start and end up
 start = end
 end += word
 
-nsects, = struct.unpack("<L", data[start:end]) 
+nsects, = struct.unpack("<L", data[start:end]) #get the number of sections
 
 nsects = nsects + 2 #there are 2 extra (HIDDEN!) sections 
 
@@ -131,11 +127,12 @@ while nsects != 0 : #if a section exists
 		p2 = "\211PNG\r\n\032\n" + p_str[0]
 		#print(p_str)
 
+		#put the new string into a png file
 		f = open('resultfile.png', 'w')
 		f.write(p2)
 		f.close()
 		print("File Created: resultsfile.png")
 
-	nsects = nsects - 1
-	section_num = section_num + 1
+	nsects = nsects - 1 #decrement number of sections
+	section_num = section_num + 1 #incremenet the line number
 	
