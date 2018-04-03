@@ -9,7 +9,10 @@ Setup: I read the spec and downloaded all of the requisite files
 Part 1:
 
 1) According to the wikipedia article on passwd, since they all have $1$ they are all encrypted using MD5
-2)
+2) The hashes are specified in between $'s right after the id, and are as follows: root: XXv.SXDX, admin:GOpCaSQH, bob:vgy72nH3, joe:eZ5SZG9g, mthomp22:SlJR2aEx
+
+
+
 3) Passwords for Bob, Joe, and mnthomp22 were all changed: Bob's was last changed on August 30, 1973, Joe's on January 25, 1971, and mnthomp22's on August 11, 1975
 4) There are restrictions on Bob, Joe and mnthomp22's passwords: 
 Bob: He must wait 5 days to change the password, the password must be changed every 90 days, he will get a warning 7 days before he has to change his password, and the account will be disabled 7 days after the password expires is no login attempt is made.
