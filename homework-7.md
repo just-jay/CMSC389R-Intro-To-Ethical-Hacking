@@ -20,3 +20,11 @@ Joe: He doesn't haev to wait to change his password, the password must be chnage
 mnthomp22: He has to wait 99999 to change his password, and he never has to change his password.  
 5) Bob last changed his password on October 4, 2024 (suspicious, thats in the future) and Joe last changed his password on March 28, 2018. This was more than 3 days ago, so it appears his account has expired.
 6) I decided to use Hashcat to decrypt my password. After gettign into the server via `nc irc.csec.umiacs.umd.edu 1337` I read through the man pages using `hashcat --help`. After that and doing a bit of research online, i was able to use the command `hashcat -m 500 challenge_shadow rockyou.txt` to attempt to decipher some passwords. Almost right away I decrypted `$1$SlJR2aEx$g6TObcH2OTrlx8MIWDZjs.:blink`. However, the code said it would take about a day to run, an i was like 'nuh uh'. So, after running it for about half an hour and getting nowhere, I realized I can switch and try the other software.
+I opened John The Ripper in Kali, and after using different commands I ended up unshadowing my hashes with `unshadow passwd.txt shadow.txt>  unshadowed.txt`, I ran `john unshadowed.txt` and, after waiting, got the following passwords:
+- root (root)
+- blink (mnthomp22)
+- saget (bob)
+- etude (admin)
+- schmo (Joe)
+
+Part 2:
