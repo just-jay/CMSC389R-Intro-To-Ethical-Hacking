@@ -35,3 +35,4 @@ I wrote code [here](https://github.com/just-jay/CMSC389R-Intro-To-Ethical-Hackin
 - Salt:r Password:motorola
  --- 
 Part 3
+I wrote code [here](https://github.com/just-jay/CMSC389R-Intro-To-Ethical-Hacking/blob/master/Homework-7-Part3.py) to computer the arithmetic problems and hashes. I started by making a regex to grab the equation from teh qeustion. Then I computed it, and hashed it with sha256. Lastly I added on a newline and put it into the socket. After getting help from a TA I was told that I need to loop this code a few times. When that ended up working I got the flag: You win! CMSC389R-{d0nt_pL@y_w1tH_mY_em0SHAns}. Side Note: I like how the flag had SHA in it.
