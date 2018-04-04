@@ -28,3 +28,10 @@ I opened John The Ripper in Kali, and after using different commands I ended up 
 - schmo (Joe)
 
 Part 2:
+I wrote code [here](https://github.com/just-jay/CMSC389R-Intro-To-Ethical-Hacking/blob/master/Homework-7-Part2.py)
+ to decrypt the hashes. My output was as follows:
+- Salt:c Password:888888
+- Salt:e Password:manchester
+- Salt:b Password:vfhbyf
+- Salt:y Password:jason1
+- Salt:r Password:motorola
