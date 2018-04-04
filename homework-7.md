@@ -23,13 +23,15 @@ I opened John The Ripper in Kali, and after using different commands I ended up 
 - saget (bob)
 - etude (admin)
 - schmo (Joe)
-
+---
 Part 2:
 I wrote code [here](https://github.com/just-jay/CMSC389R-Intro-To-Ethical-Hacking/blob/master/Homework-7-Part2.py)
- to decrypt the hashes. My output was as follows:
+ to decrypt the hashes. I went thorugh each lowercase letter of the alphabet and added it to each word in the password list. Then I hashed the whole thing and checked if it was equal to one of the known hashes I was given. If it was equal then I outputted the salt and the password that made that was related to the respective hash.
+ My output was as follows:
 - Salt:c Password:888888
 - Salt:e Password:manchester
 - Salt:b Password:vfhbyf
 - Salt:y Password:jason1
 - Salt:r Password:motorola
-
+ --- 
+Part 3
