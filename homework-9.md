@@ -4,7 +4,8 @@
   
 ---
 Part 1: 
-The homework took place at https://bigbenbargains.biz/briongshop. I first attempted some XSS on the site, but had no luck. 
+The homework took place at https://bigbenbargains.biz/briongshop. I first attempted some XSS on the site, but had no luck. The I realized the the ID variable was changing in the serach bar depending on which item I looked at. I tried various fauly input (ex. -1) as an id but nothing worked. Eventually, with the help of the slides, I realized that I would need to use some sort of SQL Injection. Based off of the slides I was able to assume that the SQL that read the IDs loked something like this: `SELECT * FROM table where id = '". $id . "'
+`. From this I was able to realize that I could use the input `id=2'OR'1`, which would evaluate to id=TRUE, thereby accomplishing SQL injection and dumping the whole table. I did this and was reqarded with the flag: FLAG CMSC389R-{u_ar3_th3_SQL_ninja} $1337.37. A pretty expensive price for a flag, so it's a good thing I found it for free!
 
 ---
 
