@@ -4,7 +4,7 @@
   
 ---
 Part 1:
-I started by logging into the servr at `nc 159.89.236.106 5678` and playing around with the different options. This took me a while to understand, and I tried a lot of different inputs and combinations in the process. A fellow classmate linked me to [this](https://blog.skullsecurity.org/2012/everything-you-need-to-know-about-hash-length-extension-attacks) website which was useful. I essentially followed the slides given in lecture, along with [this](https://ascii.cl/conversion.htm) conversion table on decimal to hex format. Eventaully, I accomplished the attack and received this flag: CMSC389R-{merkle_damgard_unguarded}. The completed program can be found [here!](py1.py)
+I started by logging into the servr at `nc 159.89.236.106 5678` and playing around with the different options. This took me a while to understand, and I tried a lot of different inputs and combinations in the process. Eventually I was able to wrap my head anroud the different numbers to keep track of and the conversions (but still had several hours of debugging). A fellow classmate linked me to [this](https://blog.skullsecurity.org/2012/everything-you-need-to-know-about-hash-length-extension-attacks) website which was useful. I essentially followed the slides given in lecture, along with [this](https://ascii.cl/conversion.htm) conversion table on decimal to hex format. Eventaully, I accomplished the attack and received this flag: CMSC389R-{merkle_damgard_unguarded}. The completed program can be found [here!](py1.py)
 
 ---
 
