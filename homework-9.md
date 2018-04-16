@@ -3,4 +3,13 @@
 <h2>Homework #9</h2>
   
 ---
-Part 1:
+Part 1: 
+The homework took place at https://bigbenbargains.biz/briongshop. I first attempted some XSS on the site, but had no luck. 
+
+---
+
+Part 2:
+For this part we had to complete all 6 levels of https://xss-game.appspot.com/. Here is a breakdown of each level:
+
+1. The first level involved trying to get an alert to pop up on the screen. The was accomplished simply by inputting some javascript into the serach bar on the screen and running this query `<script> alert(XSS!); <\script>`
+2.
