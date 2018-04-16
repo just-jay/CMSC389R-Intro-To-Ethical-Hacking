@@ -26,9 +26,9 @@ s.send("1" + '\n')
 data = s.recv(1024)
 s.send(message + '\n') 
 
-#get the has
+#get the hash
 data = s.recv(1024) 
-my_hash = data[39:].strip()
+my_hash = data[39:].strip() #grab the hash and strip the string
 print(my_hash)
 
 #continue to main 'menu'
@@ -61,14 +61,14 @@ test = fake_hash.hexdigest()
 
 #make the padding
 
-# 11 bytes of secret data (message+secret)
-# 45 bytes of padding
+# 11 bytes of start data (message+secret)
+# 45 bytes of padding 
 # 8 bytes of endian data
 
 #length of message: 15 bytes
 
 padding = '\x80' #start with the x80 
-for i in range(0,44): # add all the x00s
+for i in range(0,44): # add all the x00s (45-1)
 	padding += '\x00'
 padding += '\x58\x00\x00\x00\x00\x00\x00\x00' #endian field (8 bytes)
 
