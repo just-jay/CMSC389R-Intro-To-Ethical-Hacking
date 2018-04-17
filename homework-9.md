@@ -13,5 +13,5 @@ Part 2:
 For this part we had to complete all 6 levels of https://xss-game.appspot.com/. Here is a breakdown of each level:
 
 1. The first level involved trying to get an alert to pop up on the screen. The was accomplished simply by inputting some javascript into the serach bar on the screen and running this query `<script> alert("XSS!"); <\script>`
-2. For the second level I had some trouble fiuring out how to keep the browser to recognize the javascript. Eventually I took the hint and got lead [here](https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet#IMG_onerror_and_javascript_alert_encode), and when I ran that code the alert worked and I got directed to the next level
+2. For the second level I had some trouble fiuring out how to keep the browser to recognize the javascript. Eventually I took the hint and got lead [here](https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet#IMG_onerror_and_javascript_alert_encode), and when I ran that code the alert worked and I got directed to the next level. After looking at the hints, I realized that this command is more what they were looking for: `<img src="image.gif" onerror=alert("XSS")>`
 3.
