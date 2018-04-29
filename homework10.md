@@ -19,9 +19,9 @@ do_this:        ; These 2 lines set up a new stack frame
 
 f:
   shl eax, 8    ; bit shift left the value in eax by 8 bits
-  or al, dl     ;
-  loop f        ;
-
+  or al, dl     ; does a logical or of the current value in al and dl
+  loop f        ; loop instruction automaticaly decrements ECX by 1 and keeps going while ECX != 0 (so 4 times)
+                ; At the end of this looop eax has FFFFFFFF
   mov ecx, 8    ; Move 8 into the ecx register
   mov dx, 6761h ; put the hex value 6761 in dx (110011101100001 in binary)
   shl edx, cl   ; bit shift left the value in edx by the value in cl, in this case 8 bits
@@ -29,8 +29,8 @@ f:
                 ; now 6761 is in the 'front half' of edx
   mov dx, 6c66h ; put the hex value 6c66 into dx (110110001100110 in binary)
                 ; edx now holds 67616c66 in hex
-  xor eax, edx  ; 
-  not eax       ;
+  xor eax, edx  ; convert the xor of FFFFFFFF and 67616c66 -> 989e9399
+  not eax       ; calculate the logical not of 989e9399 -> 67616c66
                 ; These last three lines restore the frame and reset the pointers we moved at the beginning
   mov esp, ebp  ; set the stack pointer to the base pointer (undo what we did to make the frame)
   pop ebp       ; pop off the current base pointer
