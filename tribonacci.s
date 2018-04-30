@@ -23,13 +23,14 @@ mov ebx, 1    ; move 1 to ebx
 mov edx, 1    ; move 1 to edx
 
 trib:         ; tribonacci label
-add eax, ebx  ; add eax ebx to eax (ex. 0+1 = 1)
+             
+add eax, ebx  ; add ebx to eax (ex. 0 + 1 = 1)
 add eax, edx  ; add edx to eax (ex. 1 + 1 = 2)
 
-mov edi, eax  ; save the current calculated sum
+mov edi, eax  ; save the current calculated sum (temp == current tribnacci value)
 mov eax, ebx  ; update eax to be ebx
-mov ebx, edx  ; update eb
-mov edx, edi  ; update edx to be edi
+mov ebx, edx  ; update ebx to be edx
+mov edx, edi  ; update edx to be edi (set edx equal to the current tribonacci number)
 loop trib     ; keep looping until ecx reaches 0
 
 jmp finish    ; jump to the finish 
@@ -37,7 +38,7 @@ jmp finish    ; jump to the finish
 ret_one:      ; return 1 base case
 mov 1, eax    ; put 1 into eax
 
-finish:       ; finish labe
+finish:       ; finish label
 mov esp, ebp  ; set the stack pointer to the base pointer (undo what we did to make the frame)
 pop ebp       ; pop off the current base pointer
 ret           ; Return the value of the function
