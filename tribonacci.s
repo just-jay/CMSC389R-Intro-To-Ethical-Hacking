@@ -17,8 +17,14 @@ cmp ebx, eax  ; comapre 2 to passed in value
 jge ret_one   ; if 2 >= passed in number, return 1
 
               ; Otherwise we need to do calculations
-              ; TIME FOR SOME RECUSINO BOIIIS            
-sub eax, 1    ; subtract 1 from eax
+              ; TIME FOR SOME RECUSION BOIIIS            
+mov ecx, eax  ; move eax to ecx
+sub ecx, 3    ; subtract 3 from ecx so we loop the right number of times
+mov eax, 0    ; move 0 to eax
+mov ebx, 1    ; move 1 to ebx
+mov edx, 1    ; move 1 to edx
+
+trib:         ; tribonacci label
 
 
 jmp finish    ; jump to the finish 
@@ -26,7 +32,7 @@ jmp finish    ; jump to the finish
 ret_one:      ; return 1 base case
 mov 1, eax    ; put 1 into eax
 
-finish:       ; finish label
+finish:       ; finish labe
 pop edi       ; pop edi
 mov esp, ebp  ; set the stack pointer to the base pointer (undo what we did to make the frame)
 pop ebp       ; pop off the current base pointer
