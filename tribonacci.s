@@ -16,8 +16,14 @@ mov 2, ebx    ; store 2
 cmp ebx, eax  ; comapre 2 to passed in value
 jge ret_one   ; if 2 >= passed in number, return 1
 
+              ; Otherwise we need to do calculations
+              ; TIME FOR SOME RECUSINO BOIIIS            
+sub eax, 1    ; subtract 1 from eax
 
-ret_one:      ; return 1
+
+jmp finish    ; jump to the finish 
+
+ret_one:      ; return 1 base case
 mov 1, eax    ; put 1 into eax
 
 finish:       ; finish label
