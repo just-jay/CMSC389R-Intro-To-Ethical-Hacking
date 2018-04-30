@@ -1,7 +1,7 @@
 ; code to compute the tribonacci function in x86
 
 section .text ; text section, used for the actual code
-trib:         ; This sets up the frame for this function call (a symbolic label called do_this)
+trib:         ; This sets up the frame for this function call (a symbolic label called trib)
 
 push ebp      ; Store the previous base pointer
 mov ebp, esp  ; set the base pointer to the top of this stack
