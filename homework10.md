@@ -70,8 +70,9 @@ x dd 0                ; declare a 4 byte value, reffered to as location X, initi
 
 ---
 Part 2
+
 Compute the tribonacci sequence. In Assembly. Oh dear.
 
-[An Attempt Was Made]()
+[An Attempt Was Made](tribonacci.s) <- Code to compute this sequence
 
 Well, I tried.
