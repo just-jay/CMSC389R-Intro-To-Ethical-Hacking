@@ -68,3 +68,8 @@ section .data         ; the data section of the program, used to declare initial
 x dd 0                ; declare a 4 byte value, reffered to as location X, initialized to 0
 ```
 
+---
+Part 2
+Compute the tribonacci sequence. In Assembly. Oh dear.
+(An Attempt Was Made)[]
+Well, I tried.
