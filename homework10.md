@@ -76,3 +76,6 @@ Compute the tribonacci sequence for a given n. In Assembly. Oh dear.
 [An Attempt Was Made](tribonacci.s) <- Code to compute this sequence
 
 Well, I tried.
+
+NOTE 1: I took an iterative implementation of Tribonacci I found [online](http://www.psychocodes.in/tribonacci-series-program-in-c-and-c.html) and used it to help me make my tribonacci here 
+NOTE 2: I finished the code after the 11:59 deadline, and I'll add a note in the piazza submission
