@@ -16,4 +16,4 @@ What this code does is take an input from the user, and checks if it the first 2
 
 The first odd thing here is that that is that READ_SIZE is 1 greater than BUFFER_SIZE. Also, the line where we declare the char buffer array is right below the line where we make the flag (called 'valid' in the code). So, perhaps if we read more than BUFFER_SIZE chars into the buffer it will get run over and set the valid/flag variable? Then later on, when they check if valid is true, if we ran it over with some other numerical input, it will evaluate to true (becuase `if(any number greater than 0) == true)`). Indeed this is what I did.
 
-Consider the input 111111111111111111111 (21 1s). It puts 20 1s into the buffer, and the overflow gets placed into valid. Then when `if(valid)` gets run it evaluates to true, and gives us the flag. 
+Consider the input `111111111111111111111` (21 1s). It puts 20 1s into the buffer, and the overflow gets placed into valid. Then when `if(valid)` gets run it evaluates to true, and gives us the flag. 
