@@ -5,6 +5,11 @@
 ---
 Part 1:
 
+stackexchange: After looking through this file in radware2 and locating the main method, I realized that all it was doing was assignign different hex values to various bytes and XORing them a few times. I tried calculating this out by hand to figure out what was going on, and I got close, but a few things were still off. I asked a TA for help and then took another crack at it. 
+
+
+onebyone: 
+
 ---
 Part 2:
 
