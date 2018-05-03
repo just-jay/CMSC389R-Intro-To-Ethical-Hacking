@@ -11,6 +11,13 @@ Eventually, I was able to calculate what each byte 'section' had in it:
 
 - 1 -> 
 - 2 ->
+- 3 ->
+- 4 ->
+- 5 ->
+- 6 ->
+- 7 ->
+- 8 -> 7d xor 45 = 38 -> 8
+- 9 -> e8 xor db = 33 -> 3
 
 onebyone: 
 
