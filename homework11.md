@@ -11,7 +11,7 @@ Eventually, I was able to calculate what each byte 'section' had in it:
 
 - 1 -> bd xor c0 = 7d -> }
 - 2 -> bd xor d8 = 65 -> e
-- 3 ->
+- 3 -> FF xor 86 = 79 -> y
 - 4 -> 5f xor 24 = 7b -> {
 - 5 -> 87 xor aa = 2d -> -
 - 6 -> 6d xor 3f = 52 -> R
@@ -19,7 +19,7 @@ Eventually, I was able to calculate what each byte 'section' had in it:
 - 8 -> 7d xor 45 = 38 -> 8
 - 9 -> e8 xor db = 33 -> 3
 
-reading from bottom to top, we can see the flag: 389R-{ e}
+reading from bottom to top, we can see the flag: 389R-{ye}
 
 onebyone: For this part I also started by using r2. By this point I'd gotten better at using it, so I quickly found the main function and looked at it in the graph visualizer format (by running  `o main` and then `V`).
 
