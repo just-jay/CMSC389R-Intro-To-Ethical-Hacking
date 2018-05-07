@@ -38,9 +38,9 @@ Ater reading through the code more carefully, I realized that there was a regist
 - R -> 3
 - { -> 5
 
-0 1 2 3 4 5 6 7 8 9 10
-----------------------
-3 8 9 R - { n 0 i c e
+0 1 2 3 4 5 6 7 8 9 10 11
+- - - - - - - - - - - - -
+3 8 9 R - { n 0 i c  e  }
 
 ---
 Part 2:
