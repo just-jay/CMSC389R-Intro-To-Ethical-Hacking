@@ -21,8 +21,7 @@ Eventually, I was able to calculate what each byte 'section' had in it:
 
 reading from bottom to top, we can see the flag: 389R-{ye}
 
-onebyone: For this part I also started by using r2. By this point I'd gotten better at using it, so I quickly found the main function and looked at it in the graph visualizer format (by running  `o main` and then `V`).
-
+onebyone: For this part I also started by using r2. By this point I'd gotten better at using it, so I quickly found the main function and looked at it in the graph visualizer format (by running  `o main` and then `V`). I read through the visuals, and found the following characters: `0,e,c,3,},-,9,n,8,i,R,{` highlighted in red. I could immediately tell that this was part of the flag, and that it would look something like this: `389R-{?????}`. I played around with the extra letters, and got `nice0 and 0nice`
 
 ---
 Part 2:
