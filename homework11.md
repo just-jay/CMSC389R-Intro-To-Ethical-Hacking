@@ -38,11 +38,15 @@ Ater reading through the code more carefully, I realized that there was a regist
 - R -> 3
 - { -> 5
 
-`
+From there, I realized that some of the numbers related to the position of the letetr in the word. So, I charted it out and with a bit of converting I was able to get this
+
+```
 0 1 2 3 4 5 6 7 8 9 10 11
 
 3 8 9 R - { n 0 i c  e  }
-`
+```
+
+,thereby giving the flag.
 
 ---
 Part 2:
