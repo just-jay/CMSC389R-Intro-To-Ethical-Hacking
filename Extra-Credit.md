@@ -18,6 +18,6 @@ MAR -> YLA
 NDR -> ULE
 SAT -> CTF
 ```
-which reads as 'flag is Maryland rules at CTF'. 
+which reads across as 'Flag is Maryland rules at CTF'. 
 
 Then all I had to do was figure out how the flag was formatted. I soon got `echo -n "UMDCTF-{marylandrulesatctf}" | sha256sum` to output the same sha256sum as the one on the challenge page. Puzzle complete!
